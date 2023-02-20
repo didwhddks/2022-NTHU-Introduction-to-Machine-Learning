@@ -1,0 +1,23 @@
+learning_rate = 0.01
+num_iterations = 40
+batch_size = 48
+dataset split ratio = 0.8
+
+model=Model()
+model.add(Conv(filter_size=3, input_channel=1, output_channel=16, pad=2, stride=2))
+model.add(Activation("relu"))
+model.add(MaxPool(filter_size=2, stride=2))
+model.add(Conv(filter_size=3, input_channel=16, output_channel=64, pad=2, stride=2))
+model.add(Activation("relu"))
+model.add(MaxPool(filter_size=2, stride=2))
+
+model.add(Flatten())
+model.add(Dense(256, 16))
+model.add(Activation("relu"))
+model.add(Dense(16, 1))
+model.add(Activation("sigmoid"))
+
+Accuracy: 0.8270833333333332
+Accuracy: 0.7249999999999999
+
+娘泡 肯德基爺爺 大副 猴子 條紋哥

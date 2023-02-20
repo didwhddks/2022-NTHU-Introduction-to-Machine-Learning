@@ -1,0 +1,2 @@
+30 trees and 0.4 sample ratio
+40 trees and 0.3 sample ratio
